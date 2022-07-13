@@ -1,0 +1,31 @@
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    url: 'jdbc:h2:file:./h2/spring-h2-dev-location-db;DB_CLOSE_DELAY=-1'
+    #    url: jdbc:h2:mem:mydb
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    generate-ddl: false
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+      path: /h2-ui
+
+springdoc:
+  swagger-ui:
+    path: '/swagger-ui.html'
+
+coin: { '90': 'BTC', '80': 'ETH', '48543': 'SOL' }
+#  - id: 90
+#    symbol: BTC
+#    - id: 80
+#      symbol: ETH
+#    - id: 48543
+#      symbol: SOL

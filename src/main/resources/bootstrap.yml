@@ -22,10 +22,6 @@ springdoc:
   swagger-ui:
     path: '/swagger-ui.html'
 
-coin: { '90': 'BTC', '80': 'ETH', '48543': 'SOL' }
-#  - id: 90
-#    symbol: BTC
-#    - id: 80
-#      symbol: ETH
-#    - id: 48543
-#      symbol: SOL
+coin:
+  id: '90,80,48543'
+  symbol: 'BTC,ETH,SOL'
